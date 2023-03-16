@@ -3,7 +3,7 @@
 #include <aussruntime/internal/CommonState.h>
 #include <iostream>
 #include <vector>
-#include "../../ThirdParty/includes/cpp_redis/cpp_redis" // TODO(nkaptx): need optimise
+#include "cpp_redis/cpp_redis"
 
 namespace Auss
 {
