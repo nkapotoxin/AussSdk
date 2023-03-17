@@ -3,13 +3,11 @@
 using namespace Auss::Runtime;
 
 Auss::Runtime::Internal::ServerState::ServerState()
-	: m_redis_server_ip("192.168.1.169")
+	: m_redis_server_ip("127.0.0.1")
 	, m_redis_server_pw("")
 	, m_redis_server_port(6379)
 	, m_redis_client(nullptr)
 {
-	// TODO(nkaptx): read from local config file
-	
 	static cpp_redis::client client;
 	client.connect(m_redis_server_ip, m_redis_server_port);
 	client.auth(m_redis_server_pw);

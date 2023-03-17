@@ -28,7 +28,6 @@ namespace Internal
 
 		virtual AUSSRUNTIME_INTERNAL_STATE_TYPE GetStateType() = 0;
 
-		//Needs access to it public
 		virtual ~CommonState();
 
 	protected:
